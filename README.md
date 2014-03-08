@@ -1,4 +1,4 @@
-button-bar-template
+Button Bar Template
 ===================
 
 Template for Topcoat Button Bar

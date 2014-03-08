@@ -1,0 +1,30 @@
+{
+  "name": "topcoat-button-bar-template",
+  "version": "0.0.0",
+  "description": "Template for Topcoat button bar",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/topcoat/button-bar-template.git"
+  },
+  "keywords": [
+    "template",
+    "topcoat",
+    "button",
+    "bar"
+  ],
+  "author": "Kristofer Joseph @dam",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/topcoat/button-bar-template/issues"
+  },
+  "homepage": "https://github.com/topcoat/button-bar-template",
+  "devDependencies": {
+    "tap": "^0.4.8",
+    "lodash": "^2.4.1",
+    "mocha": "^1.17.1"
+  }
+}
