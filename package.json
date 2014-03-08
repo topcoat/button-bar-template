@@ -4,7 +4,10 @@
   "description": "Template for Topcoat button bar",
   "main": "index.js",
   "scripts": {
-    "test": "tap test/test.js"
+    "test": "tap test/test.js",
+    "build-js": "browserify ./example/main.js > ./example/bundle.js",
+    "build-css": "resinate -s ./example/entry.css -v true -e true -n topcoat > ./example/bundle.css",
+    "build": "npm run build-js && npm run build-css"
   },
   "repository": {
     "type": "git",
@@ -25,7 +28,11 @@
   "devDependencies": {
     "tap": "^0.4.8",
     "lodash": "^2.4.1",
-    "mocha": "^1.17.1"
+    "mocha": "^1.17.1",
+    "topcoat-theme-mobile-light": "^0.3.0",
+    "topcoat-button-bar": "^0.2.1",
+    "resinate": "^0.1.0",
+    "browserify": "^3.32.0"
   },
   "dependencies": {
     "lodash": "^2.4.1"
