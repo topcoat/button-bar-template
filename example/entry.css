@@ -1,2 +1,4 @@
 @import "topcoat-theme-mobile-light";
+/* Swap themes by switching commented out imports and running build */
+/*@import "topcoat-theme-mobile-dark";*/
 @import "topcoat-button-bar";

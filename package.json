@@ -27,14 +27,14 @@
   "homepage": "https://github.com/topcoat/button-bar-template",
   "devDependencies": {
     "tap": "^0.4.8",
-    "lodash": "^2.4.1",
     "mocha": "^1.17.1",
     "topcoat-theme-mobile-light": "^0.3.0",
     "topcoat-button-bar": "^0.2.1",
     "resinate": "^0.1.0",
-    "browserify": "^3.32.0"
+    "browserify": "^3.32.0",
+    "topcoat-theme-mobile-dark": "^0.3.0"
   },
   "dependencies": {
-    "lodash": "^2.4.1"
+    "lodash-node": "^2.4.1"
   }
 }

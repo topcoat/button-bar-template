@@ -1,9 +1,13 @@
 var ButtonBar = require('..');
 
-module.exports = function() {
-  window.document.body.innerHTML += ButtonBar({buttons: [
+(function() {
+
+  var container = document.querySelector('.container');
+  container.innerHTML = ButtonBar({buttons: [
     {'label':'a'},
     {'label':'b'},
-    {'label':'c'}
+    {'label':'c'},
+    {'label':'d'}
   ]});
-}();
+
+}());
