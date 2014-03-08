@@ -26,5 +26,8 @@
     "tap": "^0.4.8",
     "lodash": "^2.4.1",
     "mocha": "^1.17.1"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1"
   }
 }
