@@ -13,7 +13,7 @@ Usage
 -----
 
 ```
-var ButtonBar = require('..');
+var ButtonBar = require('topcoat-button-bar-template');
 
   var container = document.querySelector('.container');
   container.innerHTML = ButtonBar({buttons: [
@@ -48,4 +48,4 @@ To run the tests open terminal and type:
 ```
 npm install
 npm test
-``
+```
