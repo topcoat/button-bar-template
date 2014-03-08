@@ -1,8 +1,6 @@
 Button Bar Template
 ===================
 
-Template for Topcoat Button Bar
--------------------------------
 This module supplies an optimized precompiled [lodash](lodash.com/docs#template) template for use in the browser.
 
 Install
