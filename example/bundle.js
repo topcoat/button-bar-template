@@ -4,12 +4,15 @@ var ButtonBar = require('..');
 (function() {
 
   var container = document.querySelector('.container');
-  container.innerHTML = ButtonBar({buttons: [
-    {'label':'a'},
-    {'label':'b'},
-    {'label':'c'},
-    {'label':'d'}
-  ]});
+  container.innerHTML = ButtonBar({
+    "namespace": "topcoat",
+    "buttons": [
+      {"label": "Fwee"},
+      {"label": "Fwi"},
+      {"label": "Fwo"},
+      {"label": "Fwum"}
+    ]
+  });
 
 }());
 
@@ -17,28 +20,28 @@ var ButtonBar = require('..');
 var escape = require('lodash-node/modern/utilities/escape'),
     forEach = require('lodash-node/modern/collections/forEach');
 
-
-module.exports = function(obj) {
+module.exports  = function(obj) {
     obj || (obj = {});
-    var __t, __p = '',
-        __e = escape,
-        __j = Array.prototype.join;
-
-    function print() {
-        __p += __j.call(arguments, '');
-    }
-    with(obj) {
-        __p += '<div class="topcoat-button-bar">\n  ';
-        forEach(buttons, function(button) {
-            __p += '\n  <div class="topcoat-button-bar__item">\n    <button class="topcoat-button">' +
-                ((__t = (button.label)) == null ? '' : __t) +
-                '</button>\n  </div>\n  ';
-        });
-        __p += '\n</div>\n';
+    var __t, __p = '', __e = escape, __j = Array.prototype.join;
+    function print() { __p += __j.call(arguments, '') };
+    with (obj) {
+    __p += '<div class="' +
+    ((__t = ( namespace )) == null ? '' : __t) +
+    '-button-bar">\n  ';
+     forEach(buttons, function(button) {
+    __p += '\n  <div class="' +
+    ((__t = ( namespace )) == null ? '' : __t) +
+    '-button-bar__item">\n    <button class="' +
+    ((__t = ( namespace )) == null ? '' : __t) +
+    '-button">' +
+    ((__t = ( button.label )) == null ? '' : __t) +
+    '</button>\n  </div>\n  ';
+     });
+    __p += '\n</div>\n';
 
     }
     return __p;
-};
+  };
 
 },{"lodash-node/modern/collections/forEach":3,"lodash-node/modern/utilities/escape":23}],3:[function(require,module,exports){
 /**

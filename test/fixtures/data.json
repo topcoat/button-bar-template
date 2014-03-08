@@ -1,4 +1,5 @@
 {
+    "namespace": "topcoat",
     "buttons": [
       {"label": "Fwee"},
       {"label": "Fwi"},

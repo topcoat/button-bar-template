@@ -1,5 +1,5 @@
 var test = require('tap').test,
-    _ = require('lodash'),
+    _ = require('lodash-node'),
     data = require('./fixtures/data.json'),
     fs = require('fs'),
     template = fs.readFileSync('../src/button-bar.tpl'),

@@ -14,11 +14,11 @@ Usage
 var ButtonBar = require('topcoat-button-bar-template');
 
   var container = document.querySelector('.container');
-  container.innerHTML = ButtonBar({buttons: [
-    {'label':'a'},
-    {'label':'b'},
-    {'label':'c'},
-    {'label':'d'}
+  container.innerHTML = ButtonBar({"namespace": "topcoat","buttons": [
+    {"label":"a"},
+    {"label":"b"},
+    {"label":"c"},
+    {"label":"d"}
   ]});
 
 ```
